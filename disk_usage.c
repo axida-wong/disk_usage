@@ -48,12 +48,11 @@ void print_files(void)
 
 	for(size_t i = 0; i < current_numb; i++)
 	{
-		int blocks_num = (int )5 * log10((float )files[i].size / \
-			log10((float )max));
+		//int blocks_num = (int )5 * log10((float )files[i].size / log10((float )max));
 
 		//printf("%d\t", blocks_num);
-		for(size_t j = 0; j < blocks_num; j++)
-			printf("\xe2\x96\x93");
+		//for(size_t j = 0; j < blocks_num; j++)
+		//	printf("\xe2\x96\x93");
 		printf(" %zd\t%s\n", files[i].size, files[i].path);
 	}
 }
